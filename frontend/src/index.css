@@ -14,9 +14,8 @@
     rgba(0, 0, 0, 0.03) 0 4px 6px -2px;
 
   /* Fonts */
-  --sans: system-ui, "Segoe UI", Roboto, sans-serif;
-  --heading: system-ui, "Segoe UI", Roboto, sans-serif;
-  --mono: ui-monospace, Consolas, monospace;
+  --sans: system-ui, -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
 
   font: 18px/145% var(--sans);
   letter-spacing: 0.18px;
@@ -38,7 +37,6 @@
   max-width: 100%;
   margin: 0 auto;
   text-align: center;
-  border-inline: 1px solid var(--border);
   min-height: 100svh;
   display: flex;
   flex-direction: column;
@@ -46,10 +44,9 @@
 }
 
 body {
-  margin: 0;
-  background: var(--bg);
-  color: var(--text);
+  font-family: var(--sans);
 }
+
 
 h1,
 h2 {
@@ -81,11 +78,11 @@ p {
 }
 
 code,
-.counter {
+.tag-mono,
+.mono {
   font-family: var(--mono);
-  display: inline-flex;
-  border-radius: 4px;
-  color: var(--text-h);
+  font-feature-settings: "calt" 1;
+  letter-spacing: 0.02em;
 }
 
 code {
