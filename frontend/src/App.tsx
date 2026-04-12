@@ -1,4 +1,6 @@
+// @ts-expect-error - ReactBits components are raw JSX and lack TypeScript definitions
 import Antigravity from './components/Antigravity'
+// @ts-expect-error - ReactBits components are raw JSX and lack TypeScript definitions
 import ClickSpark from './components/ClickSpark'
 
 function App() {
