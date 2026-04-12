@@ -1,11 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import "tailwindcss";
+
 :root {
   /* Colors */
-  --text: #1f3c5c;                /* main text */
-  --text-h: #1f3c5c;              /* headings */
-  --bg: #f9f4e8;                  /* page background */
-  --border: #e5dfd2;              /* subtle borders */
-  --code-bg: #f4ebde;             /* code/surface */
-  --accent: #6384a2;              /* primary accent */
+  --bg: #f9f4e8;          /* page background */
+  --surface: #f4ebde;     /* functional surfaces */
+  --text: #1f3c5c;        /* main text */
+  --text-soft: #4b5563;   /* softer text */
+  --accent: #6384a2;      /* accent color */
+  --border: #1f3c5c;      /* outline/borders */
+
+  /* Derived Colors */
+  --text-h: var(--text);
+  --code-bg: var(--surface);
   --accent-bg: rgba(99, 132, 162, 0.1);
   --accent-border: rgba(99, 132, 162, 0.5);
   --social-bg: rgba(244, 235, 222, 0.7);
@@ -14,8 +21,9 @@
     rgba(0, 0, 0, 0.03) 0 4px 6px -2px;
 
   /* Fonts */
-  --sans: system-ui, -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
-  --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --sans: "Space Mono", monospace;
+  --heading: "Space Mono", monospace;
+  --mono: "Space Mono", monospace;
 
   font: 18px/145% var(--sans);
   letter-spacing: 0.18px;
@@ -33,13 +41,11 @@
 
 
 #root {
-  width: 1126px;
-  max-width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  min-height: 100svh;
-  display: flex;
-  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
   box-sizing: border-box;
 }
 
