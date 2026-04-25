@@ -41,8 +41,6 @@ export default function Navigation({ activeTab, onTabSelect }: NavigationProps) 
           >
             <div className="relative z-10 flex items-center px-4 py-3">
               <Icon size={20} className="shrink-0" />
-              
-              {/* Magic Expanding Label using Framer Motion */}
               <motion.div
                 initial={false}
                 animate={{
